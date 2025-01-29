@@ -5,4 +5,4 @@
 
 # Week 2
 - [Password Script](https://github.com/ORANGEHDMICABLE/tyrantweeklywork/blob/main/seasoning(0.1))
-Rest of the work was submitted through teams individually
+- Rest of the work was submitted through teams individually
