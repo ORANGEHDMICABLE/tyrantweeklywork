@@ -1,0 +1,23 @@
+#!/bin/bash
+ 
+#list users
+echo "List of users on the system:"
+cut -d: -f1 /etc/passwd
+ 
+#prompt to check user
+echo "Enter a username to display their hashed password:"
+read username
+ 
+#if user exists find hash password
+if grep -q "^$username:" /etc/passwd; then
+    shadow_line=$(grep "^$username:" /etc/shadow)
+    if [ -n "$shadow_line" ]; then
+        hashed_password=$(echo $shadow_line | cut -d: -f2)
+        echo "Hashed password for $username: $hashed_password"
+    else
+        echo "No hashed password found for $username (run with sudo)."
+    fi
+else
+    echo "$username does not exist."
+fi
+ 
