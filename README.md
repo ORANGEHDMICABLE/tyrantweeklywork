@@ -8,7 +8,7 @@
 - Rest of the work was submitted through teams individually
 
 # Week 3 (Jan 27)
--Complete
+- Complete
 
 # Week 4 (Feb 17)
 - Complete
